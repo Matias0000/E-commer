@@ -1,0 +1,24 @@
+{{#each Productos}}
+<div class="col-md-4">
+    <div class="card">
+        {{!-- <div class="card-header">
+            <h3>{{title}}</h3>
+        </div> --}}
+        <div class="card-body">
+            
+            <p>id:{{_id}}</p>
+            <p>nombre: {{nombre}}</p>
+            <p>codigo:{{codigo}}</p>
+            <p>thumbnail:{{thumbnail}}</p>
+            <p>precio:{{precio}}</p>
+            <p>stock:{{stock}}</p>
+            <p>Descripcion:{{descripcion}}</p>
+            <p>hora:{{timestamp}}</p>
+            <a href="/productos/delete/{{_id}}" class="btn btn-danger">Delete</a>
+            <a href="/productos/update/{{_id}}" class="btn btn-primary">Update</a>
+            
+            
+        </div>
+    </div>
+</div>
+{{/each}}

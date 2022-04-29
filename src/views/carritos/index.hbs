@@ -1,0 +1,15 @@
+{{#each carritos}}
+<div class="col-md-4">
+    <div class="card">
+        <div class="card-header">
+            <h3>{{nombre}}</h3>
+        </div>
+        <div class="card-body">
+            <p>nombre: {{nombre}}</p>
+            <p>fecha:{{timestamp}}</p>
+            <span>Productos:{{productos}}</span>
+            {{!-- {{#each productos}} --}}
+        </div>
+    </div>
+</div>
+{{/each}}
